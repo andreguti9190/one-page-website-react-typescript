@@ -1,0 +1,22 @@
+.nav{
+    width: 100vw;
+    color: #fff;
+    background-color: #333;
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+}
+.nav-item{
+    margin: 20px;
+}
+.nav-item-list{
+    display: flex;
+    list-style-type: none;
+}
+.nav-item-list li{
+    margin: 8px;
+    padding: 7px;
+}
+.nav-item-list li:hover{
+    border-bottom: #fff;
+}

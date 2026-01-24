@@ -1,7 +1,9 @@
-import { useState } from 'react'
-import './Nav.css'
+import { useState } from 'react';
+import './Nav.css';
+
 
 function App() {
+  const [page, setPage] = useState(0);
   return (
     <>
       <nav className='nav'>
@@ -10,13 +12,14 @@ function App() {
         </div>
         <div className='nav-item'>
           <ul className='nav-item-list'>
-            <li>Home</li>
-            <li>Gustavo Cerati</li>
-            <li>Charly Garcia</li>
-            <li>Andres Calamaro</li>
+            <li onClick={ ()=>{ setPage(0) } }>Home</li>
+            <li onClick={ ()=>{ setPage(1) } }>Gustavo Cerati</li>
+            <li onClick={ ()=>{ setPage(2) } }>Charly Garcia</li>
+            <li onClick={ ()=>{ setPage(3) } }>Andres Calamaro</li>
           </ul>
         </div>
       </nav>
+      <h1>{ page }</h1>
     </>
   )
 }

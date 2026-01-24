@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Nav from './Pages/Nav.tsx';
 import './App.css';
 

@@ -1,5 +1,6 @@
 .nav{
     width: 100vw;
+    height: 100px;
     color: #fff;
     background-color: #333;
     display: flex;
@@ -7,16 +8,18 @@
     align-content: center;
 }
 .nav-item{
-    margin: 20px;
+    padding: 20px;
+    align-content: center;
 }
 .nav-item-list{
     display: flex;
     list-style-type: none;
 }
 .nav-item-list li{
-    margin: 8px;
-    padding: 7px;
+    padding: 10px;
 }
 .nav-item-list li:hover{
-    border-bottom: #fff;
+    transition-duration: 800ms;
+    text-decoration: underline;
+    cursor: pointer;
 }

@@ -8,6 +8,7 @@ interface ContentProps {
 }
 
 function Nav(props: ContentProps) {
+  const menu = ["Home", "Gustavo Cerati", "Charly Garcia", "Andres Calamaro"]
   const [navbar, onNavbar] = useState(false);
 
   return (
@@ -18,8 +19,10 @@ function Nav(props: ContentProps) {
         </div>
         <div className={style.navItem}>
           <Navbar
+            menu={menu}
             onButton={props.onButton} />
           <NavbarMobile
+            menu={menu}
             onButton={props.onButton}
             onNavbar={onNavbar}
             navbar={navbar} />

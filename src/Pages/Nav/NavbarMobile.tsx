@@ -4,9 +4,9 @@ import style from "./navbarMobile.module.css";
 interface contentProps {
     onButton: (e: number) => void,
     onNavbar: (e: boolean) => void,
-    navbar: boolean
+    navbar: boolean,
+    menu: String[]
 }
-const menu = ["Home", "Gustavo Cerati", "Charly Garcia", "Andres Calamaro"]
 
 function NavbarMobile(props: contentProps) {
     return (<>
@@ -15,14 +15,15 @@ function NavbarMobile(props: contentProps) {
         </i>
         <ul className={style.list}
             style={{ transform: props.navbar ? 'translateX(0)' : 'translateX(100vw)' }}>
-            <li onClick={() => { props.onNavbar(false) }}>
+            <li onClick={() => { props.onNavbar(false) }}
+                className={style.li}>
                 <i className={`fa-solid fa-x ${style.x}`}></i>
             </li>
-            {menu.map((e, index) => {
+            {props.menu.map((e, index) => {
                 return (
-                    <li onClick={() => { props.onButton(index) }}
-                    className={style.li}>
-                        <a href="#"className={style.a} >{e}</a>
+                    <li onClick={() => { props.onButton(index);props.onNavbar(false) }}
+                        className={style.li}>
+                        <a href="#" className={style.a} >{e}</a>
                     </li>)
             })
             }

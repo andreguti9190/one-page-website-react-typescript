@@ -5,13 +5,8 @@
     background-color: #333;
     display: flex;
     justify-content: space-between;
-    align-content: center;
 }
 .navItem {
     padding: 20px;
     align-content: center;
-}
-.navItem i{
-    font-size: 30px;
-    cursor: pointer;
 }

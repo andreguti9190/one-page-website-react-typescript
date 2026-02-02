@@ -8,6 +8,7 @@
 .a{
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
 }
 .a:hover {
     text-decoration: underline;
@@ -15,7 +16,7 @@
 }
 
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:780px) {
     .list {
         display: none;
     }

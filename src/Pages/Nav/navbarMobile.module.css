@@ -1,9 +1,9 @@
 .menu {
+    font-size: 40px;
     display: none;
-}
-.menu{
     text-align: left;
     width: 100%;
+    z-index: 9999;
 }
 .list{
     list-style-type: none;
@@ -15,6 +15,10 @@
     display: none;
     flex-direction: column;
     background-color: #333;
+    padding: 15px;
+}
+.li{
+    padding: 10px;
 }
 .a {
     width: 100%;
@@ -33,7 +37,7 @@
 }
 
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:780px) {
     .list{
         display: flex;
         transition: transform 450ms ease;

@@ -1,0 +1,15 @@
+.background{
+    display: flex;
+    background-image: url('./fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.filter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+}
